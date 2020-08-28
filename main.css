@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(172, 172, 172, 0.561);
+}
+
+header{
+    display: flex;
+}
+
+.asidex{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(55, 250, 37);
+    font-weight: bold;
+}
+
+.yellow{
+    background-color: yellow;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(112, 112, 112);
+    overflow: scroll;
+}
+
+.tituloFooter{
+    margin-bottom: 5%;
+}
+
+.tituloSecond{
+    margin-bottom: 5%;
+}
+
+.imagenes{
+    display: none;
+}
+
+
+@media all and (min-width: 481px){
+
+body{
+    margin: 40px;
+}
+
+main{
+    display: flex;
+}
+
+.ican{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+
+}
+
+.segundaII{
+    display: flex;
+    flex-direction: column; 
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.asidex{
+    margin-top: 5%;
+    display: inline-flex;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.imagenes{
+    display: flex;
+    margin: 5px;
+}
+
+p:nth-child(2){
+    order: 2;
+}
+
+.yellow{
+    height: 50vh;
+    overflow: auto;
+}
+
+.tituloSecond{
+    margin-bottom: 3%
+}
+
+p{
+    text-align: justify;
+}
+
+footer{ 
+overflow: auto;
+}
+
+}
+
+
+@media all and (min-width:1000px){
+
+    .segundaII{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    footer{
+        margin-left: 5%;
+        height: fit-content;;
+    }
+
+    .yellow{
+        height: 70vh;
+    }
+
+
+        
+}
